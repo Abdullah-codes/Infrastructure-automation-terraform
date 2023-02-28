@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "terraform-state-falcon8983"
-    key    = "global/project2/terraform.tfstate"
+    bucket = "your-bucket-name"
+    key    = "location/where/to/store"
     region = "ap-south-1"
-    dynamodb_table = "terraform-state-locking"
+    dynamodb_table = "your-dynamodb-table-name"
     encrypt = true
   }
 }
